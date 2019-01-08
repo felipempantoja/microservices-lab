@@ -1,2 +1,3 @@
-# microservices-lab
-Playground for learning microservices
+# Microservices Lab
+
+> Playground for learning microservices
