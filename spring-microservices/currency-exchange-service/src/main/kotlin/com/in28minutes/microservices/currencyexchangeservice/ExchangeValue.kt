@@ -11,5 +11,5 @@ data class ExchangeValue(
         @Column(name = "currency_from") val from: String = "",
         @Column(name = "currency_to") val to: String = "",
         val conversionMultiple: BigDecimal = BigDecimal.ZERO,
-        val port: Int = 0
+        var port: Int = 0
 )
