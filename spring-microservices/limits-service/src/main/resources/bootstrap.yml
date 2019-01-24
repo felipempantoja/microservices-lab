@@ -6,3 +6,10 @@ spring:
       uri: http://localhost:8888
   profiles:
     active: qa
+
+# This allows access to all Actuator URLs
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

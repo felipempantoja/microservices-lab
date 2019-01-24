@@ -6,6 +6,10 @@ spring:
       server:
         git:
           uri: file:///home/pantoja/dev/workspace/microservices-lab/spring-microservices/git-localconfig-repo
+
+  # This avoids condition evaluation logging that messes the trace
+  devtools:
+    restart:
+      log-condition-evaluation-delta: false
 server:
   port: 8888
-

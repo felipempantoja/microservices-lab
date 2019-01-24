@@ -47,8 +47,15 @@ ext {
 dependencies {
     implementation('org.springframework.boot:spring-boot-starter-actuator')
     implementation('org.springframework.boot:spring-boot-starter-web')
-    implementation('com.fasterxml.jackson.module:jackson-module-kotlin')
     implementation('org.springframework.cloud:spring-cloud-starter-config')
+
+    // this makes sure all instances will be refreshed on props change
+    implementation 'org.springframework.cloud:spring-cloud-starter-bus-amqp'
+
+    // Fault Tolerance (Circuit Breaker pattern)
+    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-hystrix'
+
+    implementation('com.fasterxml.jackson.module:jackson-module-kotlin')
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     runtimeOnly('org.springframework.boot:spring-boot-devtools')
