@@ -48,6 +48,7 @@ dependencies {
     implementation('org.springframework.boot:spring-boot-starter-actuator')
     implementation('org.springframework.boot:spring-boot-starter-web')
     implementation('org.springframework.cloud:spring-cloud-starter-config')
+    implementation "org.springframework.cloud:spring-cloud-starter-netflix-eureka-client"
 
     // this makes sure all instances will be refreshed on props change
     implementation 'org.springframework.cloud:spring-cloud-starter-bus-amqp'
